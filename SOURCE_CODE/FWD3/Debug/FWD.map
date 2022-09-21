@@ -1,0 +1,466 @@
+Archive member included because of file (symbol)
+
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o (exit)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./main.o (__do_copy_data)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+LOAD ./MCAL/TIMERS/TIMER.o
+LOAD ./MCAL/EX_I/EX_I.o
+LOAD ./MCAL/DIO/DIO.o
+LOAD ./HAL/PUSH_BUTTON/PUSH_BUTTON.o
+LOAD ./HAL/LEDS/LED.o
+LOAD ./APPLICATION/APPLICATION.o
+LOAD ./main.o
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xe9e
+ *(.vectors)
+ .vectors       0x00000000       0x54 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000076        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ *(.init9)
+ *(.text)
+ .text          0x0000007e        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+                0x0000007e                __vector_12
+                0x0000007e                __bad_interrupt
+                0x0000007e                __vector_6
+                0x0000007e                __vector_3
+                0x0000007e                __vector_11
+                0x0000007e                __vector_13
+                0x0000007e                __vector_17
+                0x0000007e                __vector_19
+                0x0000007e                __vector_7
+                0x0000007e                __vector_5
+                0x0000007e                __vector_4
+                0x0000007e                __vector_9
+                0x0000007e                __vector_2
+                0x0000007e                __vector_15
+                0x0000007e                __vector_8
+                0x0000007e                __vector_14
+                0x0000007e                __vector_10
+                0x0000007e                __vector_16
+                0x0000007e                __vector_18
+                0x0000007e                __vector_20
+ .text          0x00000082        0x0 ./MCAL/TIMERS/TIMER.o
+ .text          0x00000082        0x0 ./MCAL/EX_I/EX_I.o
+ .text          0x00000082        0x0 ./MCAL/DIO/DIO.o
+ .text          0x00000082        0x0 ./HAL/PUSH_BUTTON/PUSH_BUTTON.o
+ .text          0x00000082        0x0 ./HAL/LEDS/LED.o
+ .text          0x00000082        0x0 ./APPLICATION/APPLICATION.o
+ .text          0x00000082        0x0 ./main.o
+ .text          0x00000082        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000082        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000082                . = ALIGN (0x2)
+ *(.text.*)
+ .text.TIMER0_INIT_DELAY_halfseconds
+                0x00000082       0x58 ./MCAL/TIMERS/TIMER.o
+                0x00000082                TIMER0_INIT_DELAY_halfseconds
+ .text.TIMER2_INIT
+                0x000000da       0x32 ./MCAL/TIMERS/TIMER.o
+                0x000000da                TIMER2_INIT
+ .text.EXI0_INIT
+                0x0000010c       0x38 ./MCAL/EX_I/EX_I.o
+                0x0000010c                EXI0_INIT
+ .text.EXI0_DISABLE
+                0x00000144       0x1c ./MCAL/EX_I/EX_I.o
+                0x00000144                EXI0_DISABLE
+ .text.DIO_voiInit
+                0x00000160       0x40 ./MCAL/DIO/DIO.o
+                0x00000160                DIO_voiInit
+ .text.DIO_u8SetPinDirection
+                0x000001a0      0x27c ./MCAL/DIO/DIO.o
+                0x000001a0                DIO_u8SetPinDirection
+ .text.DIO_u8SetPinValue
+                0x0000041c      0x27c ./MCAL/DIO/DIO.o
+                0x0000041c                DIO_u8SetPinValue
+ .text.DIO_u8GetPinValue
+                0x00000698      0x132 ./MCAL/DIO/DIO.o
+                0x00000698                DIO_u8GetPinValue
+ .text.DIO_u8SetPortDirection
+                0x000007ca      0x142 ./MCAL/DIO/DIO.o
+                0x000007ca                DIO_u8SetPortDirection
+ .text.DIO_u8SetPortValue
+                0x0000090c      0x142 ./MCAL/DIO/DIO.o
+                0x0000090c                DIO_u8SetPortValue
+ .text.DIO_u8GetPORTValue
+                0x00000a4e       0xb4 ./MCAL/DIO/DIO.o
+                0x00000a4e                DIO_u8GetPORTValue
+ .text.PUSH_BUTTON_INIT
+                0x00000b02       0x18 ./HAL/PUSH_BUTTON/PUSH_BUTTON.o
+                0x00000b02                PUSH_BUTTON_INIT
+ .text.CAR_LEDS_INIT
+                0x00000b1a       0x4a ./HAL/LEDS/LED.o
+                0x00000b1a                CAR_LEDS_INIT
+ .text.PEDSTRAINS_LEDS_INIT
+                0x00000b64       0x4a ./HAL/LEDS/LED.o
+                0x00000b64                PEDSTRAINS_LEDS_INIT
+ .text.LED_CAR_ON
+                0x00000bae       0x1e ./HAL/LEDS/LED.o
+                0x00000bae                LED_CAR_ON
+ .text.LED_CAR_OFF
+                0x00000bcc       0x1e ./HAL/LEDS/LED.o
+                0x00000bcc                LED_CAR_OFF
+ .text.LED_PEDSTRAINS_ON
+                0x00000bea       0x1e ./HAL/LEDS/LED.o
+                0x00000bea                LED_PEDSTRAINS_ON
+ .text.LED_PEDSTRAINS_OFF
+                0x00000c08       0x1e ./HAL/LEDS/LED.o
+                0x00000c08                LED_PEDSTRAINS_OFF
+ .text.CAR_PRIORITY
+                0x00000c26       0x32 ./HAL/LEDS/LED.o
+                0x00000c26                CAR_PRIORITY
+ .text.PEDSTRAINS_PRIORITY
+                0x00000c58       0x32 ./HAL/LEDS/LED.o
+                0x00000c58                PEDSTRAINS_PRIORITY
+ .text.YELLOW_BLINK
+                0x00000c8a       0x46 ./HAL/LEDS/LED.o
+                0x00000c8a                YELLOW_BLINK
+ .text.TRANSIENT_CASE
+                0x00000cd0       0x2a ./HAL/LEDS/LED.o
+                0x00000cd0                TRANSIENT_CASE
+ .text.ALL_INIT
+                0x00000cfa       0x1e ./APPLICATION/APPLICATION.o
+                0x00000cfa                ALL_INIT
+ .text.NORMAL_MODE
+                0x00000d18       0x2a ./APPLICATION/APPLICATION.o
+                0x00000d18                NORMAL_MODE
+ .text.BEGIN    0x00000d42       0x12 ./APPLICATION/APPLICATION.o
+                0x00000d42                BEGIN
+ .text.GREEN_REEDING_WITH_PESS
+                0x00000d54       0x2a ./APPLICATION/APPLICATION.o
+                0x00000d54                GREEN_REEDING_WITH_PESS
+ .text.RED_REEDING_WITH_PESS
+                0x00000d7e       0x24 ./APPLICATION/APPLICATION.o
+                0x00000d7e                RED_REEDING_WITH_PESS
+ .text.YELLOW_REEDING_WITH_PESS
+                0x00000da2       0x24 ./APPLICATION/APPLICATION.o
+                0x00000da2                YELLOW_REEDING_WITH_PESS
+ .text.__vector_1
+                0x00000dc6       0xba ./main.o
+                0x00000dc6                __vector_1
+ .text.main     0x00000e80       0x1a ./main.o
+                0x00000e80                main
+ .text.libgcc   0x00000e9a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000e9a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000e9a                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000e9a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00000e9a                exit
+                0x00000e9a                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000e9a        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000e9e                _etext = .
+
+.data           0x00800060        0x2 load address 0x00000e9e
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ .data          0x00800060        0x0 ./MCAL/TIMERS/TIMER.o
+ .data          0x00800060        0x0 ./MCAL/EX_I/EX_I.o
+ .data          0x00800060        0x0 ./MCAL/DIO/DIO.o
+ .data          0x00800060        0x0 ./HAL/PUSH_BUTTON/PUSH_BUTTON.o
+ .data          0x00800060        0x0 ./HAL/LEDS/LED.o
+ .data          0x00800060        0x0 ./APPLICATION/APPLICATION.o
+ .data          0x00800060        0x0 ./main.o
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ *(.data*)
+ .data.FLAGE    0x00800060        0x1 ./main.o
+                0x00800060                FLAGE
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800062                . = ALIGN (0x2)
+ *fill*         0x00800061        0x1 00
+                0x00800062                _edata = .
+                0x00800062                PROVIDE (__data_end, .)
+
+.bss            0x00800062        0x0
+                0x00800062                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800062        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ .bss           0x00800062        0x0 ./MCAL/TIMERS/TIMER.o
+ .bss           0x00800062        0x0 ./MCAL/EX_I/EX_I.o
+ .bss           0x00800062        0x0 ./MCAL/DIO/DIO.o
+ .bss           0x00800062        0x0 ./HAL/PUSH_BUTTON/PUSH_BUTTON.o
+ .bss           0x00800062        0x0 ./HAL/LEDS/LED.o
+ .bss           0x00800062        0x0 ./APPLICATION/APPLICATION.o
+ .bss           0x00800062        0x0 ./main.o
+ .bss           0x00800062        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800062        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ *(.bss*)
+ *(COMMON)
+                0x00800062                PROVIDE (__bss_end, .)
+                0x00000e9e                __data_load_start = LOADADDR (.data)
+                0x00000ea0                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800062        0x0
+                0x00800062                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800062                PROVIDE (__noinit_end, .)
+                0x00800062                _end = .
+                0x00800062                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x1b00
+ *(.stab)
+ .stab          0x00000000      0x258 ./MCAL/TIMERS/TIMER.o
+ .stab          0x00000258      0x3d8 ./MCAL/EX_I/EX_I.o
+                                0x3e4 (size before relaxing)
+ .stab          0x00000630      0x84c ./MCAL/DIO/DIO.o
+                                0x858 (size before relaxing)
+ .stab          0x00000e7c      0x18c ./HAL/PUSH_BUTTON/PUSH_BUTTON.o
+                                0x198 (size before relaxing)
+ .stab          0x00001008      0x504 ./HAL/LEDS/LED.o
+                                0x510 (size before relaxing)
+ .stab          0x0000150c      0x378 ./APPLICATION/APPLICATION.o
+                                0x384 (size before relaxing)
+ .stab          0x00001884      0x27c ./main.o
+                                0x444 (size before relaxing)
+
+.stabstr        0x00000000      0xcce
+ *(.stabstr)
+ .stabstr       0x00000000      0xcce ./MCAL/TIMERS/TIMER.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(FWD.elf elf32-avr)
+LOAD linker stubs
